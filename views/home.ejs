@@ -16,7 +16,7 @@
          <div class="modal">
             <div class="title">Compose <i class="fa fa-close"></i></div>
             
-            <form action="">
+            <form action="/" method="POST">
                <input type="text" name="name" id="name" placeholder="Your name" required>
                <textarea name="msg" id="msg" rows="7" placeholder="Your thoughts" required></textarea>
                <input type="submit" id="submit" value="Post">
@@ -27,13 +27,19 @@
          <div class="title">Thoughts</div>
 
          <div class="container">
-            <div class="userpost">
-               <div class="name">Christian</div>
-               <p>I'm just wondering if you love me Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, quis!</p>
-            </div>
+            <% if (posts.length > 0) { %>
+               <% posts.forEach(post => { %>
+                  <div class="userpost">
+                        <div><%= post.name %></div>
+                        <p><%= post.msg %></p>
+                  </div>
+               <% }) %>
+
+            <% } else { %>
+               <h3>No Post</h3>
+            <% } %>
 
          </div>
-
       </div>
    </div>
 
@@ -51,6 +57,5 @@
          modal.style.display = "none"
       });
    </script>
-   
 </body>
 </html>

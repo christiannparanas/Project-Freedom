@@ -136,6 +136,7 @@ header .modal input, textarea {
 }
 
 .posts .container p {
+   max-width: 330px;
    position: absolute;
    top: 43px;
    right: -220px;
