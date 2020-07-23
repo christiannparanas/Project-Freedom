@@ -109,7 +109,8 @@ header .modal input, textarea {
 
 /* posts */
 .posts {
-   height: 100vh;
+   position: relative;
+   height: fit-content;
    padding: 40px 20px;
 }
 
@@ -121,8 +122,6 @@ header .modal input, textarea {
 
 .posts .container {
    height: 80vh;
-   overflow: scroll;
-   overflow-x: hidden;
 
 }
 
@@ -132,7 +131,7 @@ header .modal input, textarea {
    border-radius: 15px;
    background-color: #49244d;
    position: relative;
-   margin-bottom: 180px;
+   margin-bottom: 150px;
 }
 
 .posts .container p {
@@ -147,10 +146,17 @@ header .modal input, textarea {
 }
 
 .footer {
-   text-align: center;
+   position: relative;
+   display: grid;
+   place-items: center;
+   position: absolute;
+   bottom: -300px;
+   left: 50%;
+   margin-left: -100px;
 }
 
 .footer p {
    font-size: 15px;
+   margin: 0 auto;
    margin-bottom: 10px;
 }
