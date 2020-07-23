@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+   <link rel="stylesheet" href="/styles.css">
+   <title>Freedom Wall</title>
+</head>
+<body>
+   <div id="app">
+      <header>
+         <div class="title">Freedom Wall</div>
+         <p>Share your thoughts</p>
+         <div class="compose-btn">Compose</div>
+         <div class="modal">
+            <div class="title">Compose <i class="fa fa-close"></i></div>
+            
+            <form action="">
+               <input type="text" name="name" id="name" placeholder="Your name" required>
+               <textarea name="msg" id="msg" rows="7" placeholder="Your thoughts" required></textarea>
+               <input type="submit" id="submit" value="Post">
+            </form>
+         </div>
+      </header>
+      <div class="posts">
+         <div class="title">Thoughts</div>
+
+         <div class="container">
+            <div class="userpost">
+               <div class="name">Christian</div>
+               <p>I'm just wondering if you love me Lorem ipsum dolor sit amet consectetur adipisicing elit. Eius, quis!</p>
+            </div>
+
+         </div>
+
+      </div>
+   </div>
+
+   <script>
+      const composebtn = document.querySelector('.compose-btn')
+      ;
+      const modal = document.querySelector('.modal');
+      const closeIcon = document.querySelector('.fa');
+
+      composebtn.addEventListener('click', () => {
+         modal.style.display = "block"
+      })
+
+      closeIcon.addEventListener('click', () => {
+         modal.style.display = "none"
+      });
+   </script>
+   
+</body>
+</html>
