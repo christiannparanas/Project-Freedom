@@ -120,11 +120,6 @@ header .modal input, textarea {
    margin-bottom: 20px;
 }
 
-.posts .container {
-   height: 80vh;
-
-}
-
 .posts .container .userpost {
    width: fit-content;
    padding: 17px;
