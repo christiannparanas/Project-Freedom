@@ -145,3 +145,12 @@ header .modal input, textarea {
    border-radius: 15px;
    background-color: #221122;
 }
+
+.footer {
+   text-align: center;
+}
+
+.footer p {
+   font-size: 15px;
+   margin-bottom: 10px;
+}
