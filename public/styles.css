@@ -109,7 +109,6 @@ header .modal input, textarea {
 
 /* posts */
 .posts {
-   position: relative;
    height: fit-content;
    padding: 40px 20px;
 }
@@ -120,32 +119,54 @@ header .modal input, textarea {
    margin-bottom: 20px;
 }
 
-.posts .container .userpost {
-   width: fit-content;
-   padding: 17px;
-   border-radius: 15px;
-   background-color: #49244d;
+.posts .container {
    position: relative;
-   margin-bottom: 150px;
+   padding-bottom: 40px;
 }
 
-.posts .container p {
-   max-width: 330px;
+.posts .container .userpost {
+   width: 100%;
+   padding: 17px 0 17px;
+   margin-bottom: 40px;
+   position: relative;
+   border-bottom: 3px dotted #221122;
+}
+
+.userpost .username {
+   width: fit-content;
+   background-color: #49244d;
+   padding: 10px;
+   border-radius: 7px;
+   margin-bottom: 5px;
+   border: 3px solid #221122;
+}
+
+.connect {
    position: absolute;
-   top: 43px;
-   right: -220px;
-   left: 20px;
-   padding: 20px;
-   border-radius: 15px;
+   border-bottom: 2px solid #221122;
+   border-left: 2px solid #221122;
+   z-index: -1;
+   margin-left: 3px;
+   border-bottom-left-radius: 5px;
+}
+
+.connect .a {
+   visibility: hidden;
+}
+
+.userpost .usermsg {
+   width: fit-content;
+   padding: 12px;
+   border-radius: 7px;
+   margin: 0 0 20px 10px;
    background-color: #221122;
 }
 
 .footer {
-   position: relative;
    display: grid;
    place-items: center;
    position: absolute;
-   bottom: -300px;
+   bottom: 0;
    left: 50%;
    margin-left: -100px;
 }
@@ -153,5 +174,4 @@ header .modal input, textarea {
 .footer p {
    font-size: 15px;
    margin: 0 auto;
-   margin-bottom: 10px;
 }
