@@ -54,27 +54,3 @@ app.post('/', (req, res) => {
          console.log(err)
       })
 });
-
-
-// interact
-//like
-app.post('/:id', (req, res) => {
-   const id = req.params.id;
-
-   Post.findById(id)
-   .then((result) => {
-      console.log(result)
-   })
-   .catch((err) => {
-      console.log(err)
-   })
-
-   // Post.find().sort({ createdAt: -1 })
-   // .then((result) => {
-
-   //      res.render('home', { posts: result })
-   // })
-   // .catch((err) => {
-   //    console.log(err)
-   // })
-})
