@@ -39,11 +39,11 @@
                               <% num++ %> <!-- incrmenet --> 
                            <div class="like">
                               <i class='fa fa-thumbs-o-up'></i>
-                              <div class="num"><%= num %></div>
+                              <div class="num" id="like-num"><%= num %></div>
                            </div>
                            <div class="unlike">
                               <i class='fa fa-thumbs-o-down'></i>
-                              <div class="num"><%= num %></div>
+                              <div class="num" id="unlike-num"><%= num %></div>
                            </div>
                            <div class="comment">
                               <p>Comment</p>
@@ -63,19 +63,7 @@
       </div>
    </div>
 
-   <script>
-      const composebtn = document.querySelector('.compose-btn')
-      ;
-      const modal = document.querySelector('.modal');
-      const closeIcon = document.querySelector('.fa');
 
-      composebtn.addEventListener('click', () => {
-         modal.style.display = "block"
-      })
-
-      closeIcon.addEventListener('click', () => {
-         modal.style.display = "none"
-      });
-   </script>
+   <script src="/script.js"></script>
 </body>
 </html>
