@@ -163,6 +163,10 @@ header .modal input, textarea {
    grid-template-columns: 60px 60px 60px;
 }
 
+a {
+   color: #fff;
+}
+
 .like, .unlike {
    position: relative;
    width: fit-content;

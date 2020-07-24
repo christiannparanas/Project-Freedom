@@ -36,20 +36,21 @@
                         <p class="usermsg"><%= post.msg %></p>
                         <div class="interact">
                            
-                              <% num++ %> <!-- incrmenet --> 
+
                            <div class="like">
-                              <i class='fa fa-thumbs-o-up'></i>
-                              <div class="num" id="like-num"><%= num %></div>
+                              <a class="singleBlog" href="/<%= post._id %>"><i class='fa fa-thumbs-o-up'></i></a>
+                              <div class="num" id="like-num"><%= post.likes %></div>
                            </div>
                            <div class="unlike">
                               <i class='fa fa-thumbs-o-down'></i>
-                              <div class="num" id="unlike-num"><%= num %></div>
+                              <div class="num" id="unlike-num"><%= post.unlikes %></div>
                            </div>
                            <div class="comment">
                               <p>Comment</p>
                            </div>
                         </div>
                   </div>
+                  <% num++ %>
                <% }) %>
 
             <% } else { %>

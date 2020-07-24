@@ -11,6 +11,15 @@ const postSchema = new Schema({
       type: String,
       required: true
    },
+   likes: {
+      type: Number
+   },
+   unlikes: {
+      type: Number
+   },
+   comment: {
+      type: String
+   }
 
 }, { timestamps: true });
 
