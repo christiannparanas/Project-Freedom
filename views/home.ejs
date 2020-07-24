@@ -28,11 +28,27 @@
 
          <div class="container">
             <% if (posts.length > 0) { %>
+               <% let num = 1 %>
                <% posts.forEach(post => { %>
                   <div class="userpost">
                         <div class="username"><%= post.name %></div>
                         <div class="connect"><div class="a">a</div></div>
                         <p class="usermsg"><%= post.msg %></p>
+                        <div class="interact">
+                           
+                              <% num++ %> <!-- incrmenet --> 
+                           <div class="like">
+                              <i class='fa fa-thumbs-o-up'></i>
+                              <div class="num"><%= num %></div>
+                           </div>
+                           <div class="unlike">
+                              <i class='fa fa-thumbs-o-down'></i>
+                              <div class="num"><%= num %></div>
+                           </div>
+                           <div class="comment">
+                              <p>Comment</p>
+                           </div>
+                        </div>
                   </div>
                <% }) %>
 

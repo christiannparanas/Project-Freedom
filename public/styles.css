@@ -127,7 +127,7 @@ header .modal input, textarea {
 .posts .container .userpost {
    width: 100%;
    padding: 17px 0 17px;
-   margin-bottom: 40px;
+   margin-bottom: 30px;
    position: relative;
    border-bottom: 3px dotted #221122;
 }
@@ -152,6 +152,37 @@ header .modal input, textarea {
 
 .connect .a {
    visibility: hidden;
+}
+
+/* likes */
+.interact {
+   position: relative;
+   padding: 0 20px 30px;
+   width: fit-content;
+   display: grid;
+   grid-template-columns: 60px 60px 60px;
+}
+
+.like, .unlike {
+   position: relative;
+   width: fit-content;
+   padding: 5px;
+}
+
+.like i, .unlike i {
+   font-size: 25px;
+}
+
+.comment {
+   padding-top: 10px;
+   font-size: 14px;
+}
+
+.num {
+   position: absolute;
+   font-size: 13px;
+   top: 25px;
+   left: 30px;
 }
 
 .userpost .usermsg {
