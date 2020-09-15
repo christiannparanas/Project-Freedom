@@ -197,6 +197,10 @@ a {
    background-color: #221122;
 }
 
+.usermsg {
+   font-size: 10px;
+}
+
 .footer {
    display: grid;
    place-items: center;
